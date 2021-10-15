@@ -5,7 +5,7 @@ const TableHeader = () => {
     return (
         <thead>
             <tr>
-                <th>Name</th>
+                <th>Name Here</th>
                 <th>URL</th>
                 <th>Remove</th>
             </tr>
@@ -30,9 +30,18 @@ const TableBody = props => {
 }
 
 const Table = (props) => {
-//    const { linkData, removeLink } = props;
+    const { linkData, removeLink } = props;
     {/*TODO - return <table> component, TableHeader and TableBody  */}
 
-}
+    return(
+    <table>
 
+        <TableHeader/>
+        <TableBody linkData={linkData} removeLink={removeLink}/>
+
+{/* TESTING */}
+{/* TESTINGGGG */}
+    </table>)
+
+}
 export default Table;
